@@ -14,19 +14,19 @@ Tangany is developing convincing technical solutions and enhance them with the a
 Our mission is to grant everyone easy access to the blockchain and make all transactions, regardless of the blockchain, simple and secure. 
 
 ## Personal Wallet
-Manage all your tokenized assets with Tangany wallet. With our dashboard you can manage all connected apps, dApps, programs and websites. If you are missing a resource, let us know and we will try to cooperate with the provider.
+Manage all your tokenized assets with Tangany wallet. With our dashboard you can manage all connected apps, dApps, programs and websites.
 
 ### Protection of Privacy
-Blockchain applications are currently still a big privacy risk. Our shield-technology provides sufficient protection so that other people do not get insight into your transactions. And best of all, everything is automated and in the background.
+Prevent other people to get insight into your transactions. Make transactions on blockchain applications without privacy risks.
 
 ### Dashboard
-The Tangany Dashboard lets you view and manage all your Blockchain assets. Analyze your transactions and optimize your Crypto assets. Moving assets from one program (e.g. dApps) to another has never been easier.
+View and manage all your Blockchain assets. Analyze your transactions and optimize your Crypto assets. Move assets from one program (e.g. dApps) to another easily.
 
 ### Account Recovery
 Never lose access to your data or private keys again. If you have forgotten your password, you can easily restore it. However, if you want to manage your private key yourself, you can do so at any time.
 
 ### Usability
-Usability is one of Tangany Wallet’s key goals. Everything should always be as simple as possible without sacrificing security and privacy. That is what our Cloud Wallet offers.
+Usability is one of our key goals. We aim for simplicity without sacrificing security and privacy.
 
 ## Development Progress
 
