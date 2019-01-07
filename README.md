@@ -13,10 +13,8 @@ Two of the key challenges for blockchain usage is to deal with the lack of secur
 Tangany is developing convincing technical solutions and enhance them with the aspects of trust and guidance. 
 Our mission is to grant everyone easy access to the blockchain and make all transactions, regardless of the blockchain, simple and secure. 
 
-Our API can be integrated into existing systems – such as apps, software programs and websites to allow businesses to interact with blockchain without worrying about gas, private & public Keys or other weird blockchain stuff
-
-
-
+Our API can be integrated into existing systems to allow businesses to interact with multiple blockchains such as Ethereum, EOS and Bitcoin without 
+worrying about complex technical and security-related aspects of the blockchain technology.
 ***
 <div align="center">
 <p>
