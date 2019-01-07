@@ -15,6 +15,19 @@ Our mission is to grant everyone easy access to the blockchain and make all tran
 
 Our API can be integrated into existing systems to allow businesses to interact with multiple blockchains such as Ethereum, EOS and Bitcoin without 
 worrying about complex technical and security-related aspects of the blockchain technology.
+
+## Private key storage
+We are using a Hardware Security Module (HSM) that provides the highest security standard for private key storage solution. 
+
+## API
+Our well documented API helps you to create blockchain based applications. 
+
+## Customized implementations
+Every business has their own requirements. We offer different customizing options for smart contracts or other blockchain features. 
+
+## Multiple blockchains
+We are focused on the most important blockchains for cryptocurrencies and smart contracts: Bitcoin, Ethereum and EOS. 
+
 ***
 <div align="center">
 <p>
