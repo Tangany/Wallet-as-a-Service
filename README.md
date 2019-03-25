@@ -1,6 +1,6 @@
 <div align="center">  
   <a href="https://tangany.com">  
-    <img src="https://raw.githubusercontent.com/Tangany/cloud-wallet/master/docs/logo.svg?sanitize=true"  alt="Tangany" width="200" />  
+    <img src="https://raw.githubusercontent.com/Tangany/cloud-wallet/master/docs/tangany.gif"  alt="Tangany" width="50%" />  
   </a>  
   <h1>Tangany Wallet</h1>      
   <p>  
@@ -30,8 +30,11 @@ We are focused on the most important blockchains for cryptocurrencies and smart 
 
 ***
 <div align="center">
+<p>   
+<img src="https://raw.githubusercontent.com/Tangany/cloud-wallet/master/docs/logo.svg?sanitize=true"  alt="Tangany" height="50" align="middle" />  
+</p>
 <p>
-© 2018 <a href="https://tangany.com">Tangany</a>
+© 2019 <a href="https://tangany.com">Tangany</a>
 </p>
 <p>
  <a href="https://tangany.com/imprint/">Imprint</a>
