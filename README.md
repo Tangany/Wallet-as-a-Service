@@ -2,31 +2,30 @@
   <a href="https://tangany.com">  
     <img src="https://raw.githubusercontent.com/Tangany/cloud-wallet/master/docs/tangany.gif"  alt="Tangany" width="50%" />  
   </a>  
-  <h1>Tangany Wallet</h1>      
+  <h1>Tangany Blockchain Wallet as a Service</h1>      
   <p>  
-    <strong>Safety and ease for every blockchain transaction</strong>  
-  </p>  
+    <strong>It's never been easier to build on blockchain</strong>  
+  </p>      
   <br/>  
 </div>  
 
-Two of the key challenges for blockchain usage is to deal with the lack of security and the insufficient usability. 
-Tangany is developing convincing technical solutions and enhance them with the aspects of trust and guidance. 
-Our mission is to grant everyone easy access to the blockchain and make all transactions, regardless of the blockchain, simple and secure. 
+Tangany offers a technological solution, called 'Wallet as a Service', for companies to use blockchain. These integrate easily and securely blockchain into their systems by using our modern blockchain API. The service will handle the storage of private keys and the signing of transactions in the cloud as well as blockchain access via a stable node infrastructure.
 
-Our API can be integrated into existing systems to allow businesses to interact with multiple blockchains such as Ethereum, EOS and Bitcoin without 
-worrying about complex technical and security-related aspects of the blockchain technology.
+Clients are saving a lot of development time and costs as they can use a full and ready solution instead of developing an individual one. In addition, the blockchain usability for clients and users is increased enormously - no more hassle with private keys management.
 
-## Private key storage
-We are using a Hardware Security Module (HSM) that provides the highest security standard for private key storage solution. 
+## PRIVATE KEY HSM VAULT
+We use a Hardware Security Module (HSM) that provides the highest security standard for private key storage solution (FIPS 140-2 Level 2).
 
-## API
-Our well documented API helps you to create blockchain based applications. 
+## UNIFIED API
+Our well documented API helps you to create blockchain based applications. One API for all blockchain-related tasks and direct access to different blockchains.
 
-## Customized implementations
-Every business has their own requirements. We offer different customizing options for smart contracts or other blockchain features. 
+## TRANSACTION SIGNER
+Sign transaction easily with our module for all your connected blockchains. The signing is done securely within the Private Key Vault.
 
-## Multiple blockchains
-We are focused on the most important blockchains for cryptocurrencies and smart contracts: Bitcoin, Ethereum and EOS. 
+## NODE INFRASTRUCTURE
+Choose whatever blockchain suits your needs the most. Clients can connect to Public Blockchains like Ethereum, Bitcoin or Tron just as to Private Blockchains like Hyperledger, Corda or Azure Ethereum.
+
+Find out more by visiting https://tangany.com.
 
 ***
 <div align="center">
