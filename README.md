@@ -23,7 +23,7 @@ Our well documented API helps you to create blockchain based applications. One A
 Sign transaction easily with our module for all your connected blockchains. The signing is done securely within the Private Key Vault.
 
 ## NODE INFRASTRUCTURE
-Choose whatever blockchain suits your needs the most. Clients can connect to Public Blockchains like Ethereum, Bitcoin or Tron just as to Private Blockchains like Hyperledger, Corda or Azure Ethereum.
+Choose whatever blockchain suits your needs the most. Clients can connect to public Blockchains like Ethereum, Bitcoin just as to Private Blockchains.
 
 Find out more by visiting https://tangany.com.
 
