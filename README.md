@@ -4,26 +4,33 @@
   </a>  
   <h1>Tangany Blockchain Wallet as a Service</h1>      
   <p>  
-    <strong>It's never been easier to build on blockchain</strong>  
+    <strong>Secure custody solution with focus on performance and usability </strong>  
   </p>      
   <br/>  
 </div>  
 
-Tangany offers a technological solution, called 'Wallet as a Service', for companies to use blockchain. These integrate easily and securely blockchain into their systems by using our modern blockchain API. The service will handle the storage of private keys and the signing of transactions in the cloud as well as blockchain access via a stable node infrastructure.
+Tangany is a custodian wallet infrastructure provider that offers secure and performant solutions for blockchain business ideas. 
+Using the `WaaS` API interface, businesses can securely access market-leading public as well as private blockchains without much effort. 
 
-Clients are saving a lot of development time and costs as they can use a full and ready solution instead of developing an individual one. In addition, the blockchain usability for clients and users is increased enormously - no more hassle with private keys management.
+This repository is a developer-oriented hub for WaaS related resources 
 
-## PRIVATE KEY HSM VAULT
-We use a Hardware Security Module (HSM) that provides the highest security standard for private key storage solution (FIPS 140-2 Level 2).
+# Documentation
+Find our API documentation at https://tangany.docs.stoplight.io/
 
-## UNIFIED API
-Our well documented API helps you to create blockchain based applications. One API for all blockchain-related tasks and direct access to different blockchains.
+# Postman
+Check out our collection and start creating wallets and sending transactions within minutes.
+ 
+ [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/06367bf9a2664edcebf4)
 
-## TRANSACTION SIGNER
-Sign transaction easily with our module for all your connected blockchains. The signing is done securely within the Private Key Vault.
 
-## NODE INFRASTRUCTURE
-Choose whatever blockchain suits your needs the most. Clients can connect to public Blockchains like Ethereum, Bitcoin just as to Private Blockchains.
+# SDK
+Currently, we are providing Software Development Kits for the following languages and frameworks:
+
+SDK | Description | Link
+--- | --- | ---
+node.js | wrapper for Tangany WaaS | ![](https://raw.githubusercontent.com/Tangany/waas-js-sdk/master/docs/package-badge.svg?sanitize=true)
+
+Development kits for many other languages are in consideration or active development (e.g. Go, Java, Python, Ruby, C#). Please inquire for ETAs and other information.
 
 Find out more by visiting https://tangany.com.
 
