@@ -28,7 +28,7 @@ Currently, we are providing Software Development Kits for the following language
 
 SDK | Description | Link
 --- | --- | ---
-node.js | wrapper for Tangany WaaS | ![](https://raw.githubusercontent.com/Tangany/waas-js-sdk/master/docs/package-badge.svg?sanitize=true)
+node.js | wrapper for Tangany WaaS | [![](https://raw.githubusercontent.com/Tangany/waas-js-sdk/master/docs/package-badge.svg?sanitize=true)](https://www.npmjs.com/package/@tangany/waas)
 
 Development kits for many other languages are in consideration or active development (e.g. Go, Java, Python, Ruby, C#). Please inquire for ETAs and other information.
 
@@ -40,7 +40,7 @@ Find out more by visiting https://tangany.com.
 <img src="https://raw.githubusercontent.com/Tangany/cloud-wallet/master/docs/logo.svg?sanitize=true"  alt="Tangany" height="50" align="middle" />  
 </p>
 <p>
-© 2019 <a href="https://tangany.com">Tangany</a>
+© 2020 <a href="https://tangany.com">Tangany</a>
 </p>
 <p>
  <a href="https://tangany.com/imprint/">Imprint</a>
