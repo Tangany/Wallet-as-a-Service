@@ -15,13 +15,11 @@ Using the `WaaS` API interface, businesses can securely access market-leading pu
 This repository is a developer-oriented hub for WaaS related resources 
 
 # Documentation
-Find our API documentation at https://tangany.docs.stoplight.io/
+Find our API documentation at https://docs.tangany.com/
 
-# Postman
-Check out our collection and start creating wallets and sending transactions within minutes.
- 
- [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/06367bf9a2664edcebf4)
+Check out our Postman collection and start creating wallets and sending transactions within minutes
 
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/06367bf9a2664edcebf4)
 
 # SDK
 Currently, we are providing Software Development Kits for the following languages and frameworks:
@@ -33,6 +31,9 @@ node.js | wrapper for Tangany WaaS | [![](https://raw.githubusercontent.com/Tang
 Development kits for many other languages are in consideration or active development (e.g. Go, Java, Python, Ruby, C#). Please inquire for ETAs and other information.
 
 Find out more by visiting https://tangany.com.
+
+# Status
+Monitor our API status and subscribe to our service notifications at our status page https://status.tangany.com
 
 ***
 <div align="center">
