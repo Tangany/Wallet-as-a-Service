@@ -52,7 +52,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Improve performance
 
-## [1.4.0] - 2020-02-02
+## [1.4.0] - 2020-04-02
 ### Changed
 - Disable UTF-8 conversion of Ethereum data payload to allow interacting with arbitrary smart contracts via `POST /eth/wallet/{wallet}/send`. Now only hexadecimal strings are accepted for `data`
 ### Fixed
