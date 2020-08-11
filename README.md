@@ -21,6 +21,9 @@ Check out our Postman collection and start creating wallets and sending transact
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/06367bf9a2664edcebf4)
 
+## Changelog
+Explore the latest software changes in the [changelog](./CHANGELOG.md)
+
 # SDK
 Currently, we are providing Software Development Kits for the following languages and frameworks:
 
@@ -29,8 +32,6 @@ SDK | Description | Link
 node.js | wrapper for Tangany WaaS | [![](https://raw.githubusercontent.com/Tangany/waas-js-sdk/master/docs/package-badge.svg?sanitize=true)](https://www.npmjs.com/package/@tangany/waas)
 
 Development kits for many other languages are in consideration or active development (e.g. Go, Java, Python, Ruby, C#). Please inquire for ETAs and other information.
-
-Find out more by visiting https://tangany.com.
 
 # Status
 Monitor our API status and subscribe to our service notifications at our status page https://status.tangany.com
