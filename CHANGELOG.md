@@ -8,6 +8,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 ### Added
 
+## [1.6.1] - 2020-08-12
+### Changed
+- Fix empty return value when executing a `bool` response type smart contract call
+### Fixed
+- Fix misleading error message for recipients address mismatch when using the `wallet` request body parameter
+### Added
+- Add convenience route `GET /eth/contract/:contract/call/:method` for calling Ethereum smart contract methods without arguments
+- Add optional query parameter `?type` to define the return types for smart contract method calling routes `GET /eth/contract/:contract/call/:method` and `GET /eth/contract/:contract/:wallet/call/:method`. The `?type` query accepts valid Solidity data types and defaults to is `uint256`
+
 ## [1.6.0] - 2020-08-10
 ### Changed
 - Enable `amount` argument for `POST /eth/contract/:contract/:wallet/send-async` to allow interacting with payable smart contract methods. This also changes the `amount` argument to become an optional argument in all Ethereum sending endpoints (defaults to 0)
