@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres
 to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.7.1] - 2021-02-01
+
+### Changed
+
+- Improve the information content in error messages
+
+### Fixed
+
+- Fix wallet count of hsm-secured wallets in `GET /wallets` always returns 0
+- Fix wallet substitution in contract calls when argument is a deep nested array of type wallet
+
+### Added
+
+- Add error messages in case of invalid argument filters in contract event searches
+
 ## [1.7.0] - 2020-12-22
 
 ### Changed
