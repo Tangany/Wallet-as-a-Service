@@ -20,6 +20,21 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 - Add error messages in case of invalid argument filters in contract event searches
 
+### Deprecated
+- **Synchronous transaction endpoints are deprecated and will permanently cease function on 01 July 2021. We advise a timely migration to asynchronous endpoint variants to prevent possible service interruptions**
+
+| Deprecated endpoint | API URL |
+| :--- | :--- |
+| Ethereum - Make wallet transaction | `POST /eth/wallet/:wallet/send` |
+| Ethereum - Sign wallet transaction | `POST /eth/wallet/:wallet/sign` |
+| Ethereum ERC20 - Make ERC20 token transaction | `POST /eth/erc20/:token/:wallet/send` |
+| Ethereum ERC20 - Execute ERC20 "transferFrom" | `POST /eth/erc20/:token/:wallet/transfer-from` |
+| Ethereum ERC20 - Execute ERC20 "approve" | `POST /eth/erc20/:token/:wallet/approve` |
+| Ethereum ERC20 - Execute ERC20 "mint" | `POST /eth/erc20/:token/:wallet/mint` |
+| Ethereum ERC20 - Execute ERC20 "burn" | `POST /eth/erc20/:token/:wallet/burn` |
+| Bitcoin - Make wallet transaction |  `POST /btc/wallet/:wallet/send` |
+| Bitcoin - Sign wallet transaction | `POST /btc/wallet/:wallet/sign` |
+
 ## [1.7.0] - 2020-12-22
 
 ### Changed
