@@ -5,6 +5,49 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres
 to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.8.0] - 2021-03-10
+
+### Added
+
+- (**opt-in beta**) Monitor wallet-based transactions and get notified in real-time about transaction status changes via a webhook
+  - Create new wallet-based transaction with extensive filtering options: `POST /eth/wallet/:wallet/monitors` 
+  - Replace exiting monitors: `PUT /eth/wallet/:wallet/monitor/:monitor`
+  - Partially update existing monitors `PATCH /eth/wallet/:wallet/monitor/:monitor`. Supports RFC 6902
+  - Delete monitor `DELETE /eth/wallet/:wallet/monitor/:monitor`
+  - Query monitor status `GET /eth/wallet/:wallet/monitor/:monitor`
+  - List all monitors for current wallet `GET /eth/wallet/:wallet/monitors`
+  - List all monitors `GET /eth/monitors`
+- Added a new header `tangany-ethereum-chain-id` to enforce desired chain ID in a custom Ethereum network
+- Included a new field `data` to Ethereum smart contract estimation response of `POST /eth/contract/:contract/:wallet/estimate-fee` that converts the smart contract ABI call to hexadecimal data
+- Categorize wallets and add custom meta data via wallet tags
+  - Add tags to wallets and update exiting tags using the new endpoint  `PATCH /wallet/:wallet` that supports atomic
+    updates via [RFC 6902 (JSON Patch)](https://tools.ietf.org/html/rfc6902)
+- Added new, improved `GET /wallets` endpoint to query wallets
+  - Includes pagination and sorting options
+  - Allows tag filtering using the `?tag` & `?xtag` query parameters
+
+### Changed
+
+- Extended responses of sending Ethereum endpoints with `nonce` and HATEOAS links to adjacent resources
+- Requests using the custom network URL in the `tangany-ethereum-network` header are now checked against a
+  customer-specific whitelist. Contact the support team to enable new custom Ethereum networks for a user account.
+  Custom Ethereum networks that were used by existing customers were automatically whitelisted before the launch
+
+### Fixed
+
+- Improved the behaviour of sent Ethereum transactions in asynchronous requests. `unknown` transactions are now rejected
+  after a shorter time span
+- Fixed a case where `tangany-ethereum-nonce` header were not enforced in an Ethereum transaction if the provided nonce
+  was less than the current blockchain nonce
+- Vastly improved the throughput of asynchronous Ethereum transactions from a single wallet
+- Reduced the likelihood of overlapping nonces when sending multiple Ethereum transactions from a single wallet
+  simultaneously
+
+### Deprecated
+
+- Soft deprecate `POST /wallet`. This endpoint will from now on be documented as `POST /wallets`.
+- Soft deprecate `GET /wallet`. Migrate to compatible endpoint with extended features `GET /wallets`
+
 ## [1.7.1] - 2021-02-01
 
 ### Changed
@@ -21,7 +64,9 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Add error messages in case of invalid argument filters in contract event searches
 
 ### Deprecated
-- **Synchronous transaction endpoints are deprecated and will permanently cease function on 01 July 2021. We advise a timely migration to asynchronous endpoint variants to prevent possible service interruptions**
+
+- **Synchronous transaction endpoints are deprecated and will permanently cease function on 01 July 2021. We advise a
+  timely migration to asynchronous endpoint variants to prevent possible service interruptions**
 
 | Deprecated endpoint | API URL |
 | :--- | :--- |
