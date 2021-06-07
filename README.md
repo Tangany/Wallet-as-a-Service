@@ -21,6 +21,8 @@ Check out our Postman collection and start creating wallets and sending transact
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/06367bf9a2664edcebf4)
 
+Download the complete API specification in the [OpenAPI format](https://cwstorecdn0.blob.core.windows.net/web/waas.oas3.bundled.yaml)
+
 ## Changelog
 Explore the latest software changes in the [changelog](./CHANGELOG.md)
 
