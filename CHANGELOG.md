@@ -5,6 +5,27 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres
 to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+
+## [1.8.1] - 2021-06-07
+
+### Changed
+
+- Check Bitcoin transactions for a valid fee configuration before the asynchronous hand-over
+
+### Fixed
+
+- Add missing tag query params to pagination links in `GET /wallets`
+- Fix `GET /wallet/:wallet/sign` not throwing expected errors for invalid encodings
+- Fix async Bitcoin transactions stuck in the `awaiting transaction confirmation` stage and time out eventually even though the transaction is mined successfully
+- Fix bug where a deleted wallet could be updated
+- Fix incorrect error message about gas price for gas-less custom Ethereum networks
+- Fix a rare case where an async Ethereum request status may indicate a failure (error code `828065450941776`) even though the transaction is mined successfully
+- Fix cases where async Ethereum transaction processes may unexpectedly fail due to various recoverable errors
+
+### Added
+
+- Add support for tag value queries (e.g. `?tag["my-tag"]="my-value"`) in `GET /wallets`
+
 ## [1.8.0] - 2021-03-10
 
 ### Added
