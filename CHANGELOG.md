@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres
 to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.8.2] - 2021-06-14
+
+### Changed
+
+- Support EIP-155 transactions in Ethereum custom networks
+
+### Fixed
+
+- Fix "Could not process invalid cookie value" responses when communicating with certain custom networks
+- Fix certain Bitcoin recipient addresses declined with `Invalid recipient address`
+- Fix prematurely purging `Completed` asynchronous request IDs
 
 ## [1.8.1] - 2021-06-07
 
@@ -16,10 +27,12 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 - Add missing tag query params to pagination links in `GET /wallets`
 - Fix `GET /wallet/:wallet/sign` not throwing expected errors for invalid encodings
-- Fix async Bitcoin transactions stuck in the `awaiting transaction confirmation` stage and time out eventually even though the transaction is mined successfully
+- Fix async Bitcoin transactions stuck in the `awaiting transaction confirmation` stage and time out eventually even
+  though the transaction is mined successfully
 - Fix bug where a deleted wallet could be updated
 - Fix incorrect error message about gas price for gas-less custom Ethereum networks
-- Fix a rare case where an async Ethereum request status may indicate a failure (error code `828065450941776`) even though the transaction is mined successfully
+- Fix a rare case where an async Ethereum request status may indicate a failure (error code `828065450941776`) even
+  though the transaction is mined successfully
 - Fix cases where async Ethereum transaction processes may unexpectedly fail due to various recoverable errors
 
 ### Added
@@ -30,22 +43,24 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Added
 
-- (**opt-in beta**) Monitor wallet-based transactions and get notified in real-time about transaction status changes via a webhook
-  - Create new wallet-based transaction with extensive filtering options: `POST /eth/wallet/:wallet/monitors` 
-  - Replace exiting monitors: `PUT /eth/wallet/:wallet/monitor/:monitor`
-  - Partially update existing monitors `PATCH /eth/wallet/:wallet/monitor/:monitor`. Supports RFC 6902
-  - Delete monitor `DELETE /eth/wallet/:wallet/monitor/:monitor`
-  - Query monitor status `GET /eth/wallet/:wallet/monitor/:monitor`
-  - List all monitors for current wallet `GET /eth/wallet/:wallet/monitors`
-  - List all monitors `GET /eth/monitors`
+- (**opt-in beta**) Monitor wallet-based transactions and get notified in real-time about transaction status changes via
+  a webhook
+    - Create new wallet-based transaction with extensive filtering options: `POST /eth/wallet/:wallet/monitors`
+    - Replace exiting monitors: `PUT /eth/wallet/:wallet/monitor/:monitor`
+    - Partially update existing monitors `PATCH /eth/wallet/:wallet/monitor/:monitor`. Supports RFC 6902
+    - Delete monitor `DELETE /eth/wallet/:wallet/monitor/:monitor`
+    - Query monitor status `GET /eth/wallet/:wallet/monitor/:monitor`
+    - List all monitors for current wallet `GET /eth/wallet/:wallet/monitors`
+    - List all monitors `GET /eth/monitors`
 - Added a new header `tangany-ethereum-chain-id` to enforce desired chain ID in a custom Ethereum network
-- Included a new field `data` to Ethereum smart contract estimation response of `POST /eth/contract/:contract/:wallet/estimate-fee` that converts the smart contract ABI call to hexadecimal data
+- Included a new field `data` to Ethereum smart contract estimation response
+  of `POST /eth/contract/:contract/:wallet/estimate-fee` that converts the smart contract ABI call to hexadecimal data
 - Categorize wallets and add custom meta data via wallet tags
-  - Add tags to wallets and update exiting tags using the new endpoint  `PATCH /wallet/:wallet` that supports atomic
-    updates via [RFC 6902 (JSON Patch)](https://tools.ietf.org/html/rfc6902)
+    - Add tags to wallets and update exiting tags using the new endpoint  `PATCH /wallet/:wallet` that supports atomic
+      updates via [RFC 6902 (JSON Patch)](https://tools.ietf.org/html/rfc6902)
 - Added new, improved `GET /wallets` endpoint to query wallets
-  - Includes pagination and sorting options
-  - Allows tag filtering using the `?tag` & `?xtag` query parameters
+    - Includes pagination and sorting options
+    - Allows tag filtering using the `?tag` & `?xtag` query parameters
 
 ### Changed
 
